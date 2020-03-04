@@ -31,7 +31,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: 5
       imagePullSecrets:
-        - name: 
+        - name: regcred
       containers:
       - name: server
         image: registry.cn-hangzhou.aliyuncs.com/xiesheng/gcr.io-google-samples-microservices-demo-emailservice:v0.1.2
@@ -67,7 +67,7 @@ spec:
         app: shoppingcartservice
     spec:
       imagePullSecrets:
-        - name: 
+        - name: regcred
       containers:
         - name: server
           image: registry.cn-hangzhou.aliyuncs.com/xiesheng/gcr.io-google-samples-microservices-demo-checkoutservice:v0.1.2
@@ -117,7 +117,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: 5
       imagePullSecrets:
-        - name: 
+        - name: regcred
       containers:
       - name: server
         image: registry.cn-hangzhou.aliyuncs.com/xiesheng/gcr.io-google-samples-microservices-demo-recommendationservice:v0.1.2
@@ -156,7 +156,7 @@ spec:
         app: frontend
     spec:
       imagePullSecrets:
-        - name: 
+        - name: regcred
       containers:
         - name: server
           image: registry.cn-hangzhou.aliyuncs.com/xiesheng/gcr.io-onlineboutique-frontend:0.1.2
@@ -202,7 +202,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: 5
       imagePullSecrets:
-        - name: 
+        - name: regcred
       containers:
       - name: server
         image: registry.cn-hangzhou.aliyuncs.com/xiesheng/gcr.io-google-samples-microservices-demo-paymentservice:v0.1.2
@@ -240,7 +240,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: 5
       imagePullSecrets:
-        - name: 
+        - name: regcred
       containers:
       - name: server
         image: registry.cn-hangzhou.aliyuncs.com/xiesheng/gcr.io-onlineboutique-productcatalogservice:0.1.2
@@ -278,7 +278,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: 5
       imagePullSecrets:
-        - name: 
+        - name: regcred
       containers:
       - name: server
         image: registry.cn-hangzhou.aliyuncs.com/xiesheng/gcr.io-google-samples-microservices-demo-cartservice:v0.1.2
@@ -324,7 +324,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: 5
       imagePullSecrets:
-        - name: 
+        - name: regcred
       restartPolicy: Always
       containers:
       - name: main
@@ -357,7 +357,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: 5
       imagePullSecrets:
-        - name: 
+        - name: regcred
       containers:
       - name: server
         image: registry.cn-hangzhou.aliyuncs.com/xiesheng/gcr.io-google-samples-microservices-demo-currencyservice:v0.1.2
@@ -395,7 +395,7 @@ spec:
         app: shippingservice
     spec:
       imagePullSecrets:
-        - name: 
+        - name: regcred
       containers:
       - name: server
         image: registry.cn-hangzhou.aliyuncs.com/xiesheng/gcr.io-google-samples-microservices-demo-shippingservice:v0.1.2
@@ -433,7 +433,7 @@ spec:
         app: redis-cart
     spec:
       imagePullSecrets:
-        - name: 
+        - name: regcred
       containers:
       - name: redis
         image: registry.cn-hangzhou.aliyuncs.com/xiesheng/docker.io-redis:alpine
@@ -476,7 +476,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: 5
       imagePullSecrets:
-        - name: 
+        - name: regcred
       containers:
       - name: server
         image: registry.cn-hangzhou.aliyuncs.com/xiesheng/gcr.io-google-samples-microservices-demo-adservice:v0.1.2
